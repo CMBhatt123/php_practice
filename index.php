@@ -2,9 +2,10 @@
 class Mobile{
 var $model; //properties
 function showModel($number){
-    global $model;
-    $model =$number;
-    echo "Model number is: $model <br>";
+    // global $model;
+    // $model =$number;
+    $this->model= $number;
+    echo "Model number is: $this->model <br>";
 }
 }
 $samsung = new Mobile;
